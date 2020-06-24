@@ -24,6 +24,7 @@ interface IUser{
     name:string
 }
 // con la finalidad de prevenir errores de tipo
+// retorna un arreglo de interface de IUser
 const fn=(x:IPrueba):IUser[]=>{
     return [{name:""}]
 }
@@ -34,9 +35,14 @@ class ClasePrueba implements IPrueba{
     texto=""
 }
 
+// clase que implementa la interface IPrueba2
+// 
 class ClasePrueba2 implements IPrueba2{
     public texto="texto"
     public met(x){
         return 1
     }
 }
+
+const x:number=1
+let y:string="aaee"
